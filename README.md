@@ -40,7 +40,7 @@ services:
 
 Проверить наличие образа — `docker images`
 
-Запустить контейнер — `docker run -ti -d --restart=unless-stopped img_name`, где --restart=unless-stopped это рестарт контейнера при рестарте ОС
+Запустить контейнер — `docker run -ti -d -v /etc/timezone:/etc/timezone:ro -v /etc/localtime:/etc/localtime:ro --restart=unless-stopped img_name`, где --restart=unless-stopped это рестарт контейнера при рестарте ОС
 
 🔸 Манипуляции с контейнером
 
