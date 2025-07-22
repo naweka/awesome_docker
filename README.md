@@ -62,7 +62,7 @@ services:
 
 ```
 docker commit efc9c462478e temp_img
-docker run -it --entrypoint /bin/bash temp_img
+docker run -it -p 8080 --entrypoint /bin/bash temp_img
 ```
 
 ### 🔸 Подключить левый контейнер к сетке
